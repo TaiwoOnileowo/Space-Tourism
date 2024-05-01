@@ -1,0 +1,111 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+* {
+  scroll-behavior: smooth;
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+.blur {
+  backdrop-filter: blur(81.55px);
+}
+.bellefair {
+  font-family: "Bellefair", serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.barlow-condensed-regular {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.navLinkNo {
+  font-family: "Barlow Condensed", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+  font-size: 16px;
+  letter-spacing: 2.7px;
+}
+
+.big-circle {
+  width: 450px;
+  height: 450px;
+  border-radius: 100%;
+}
+
+/* .list::after{
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  width: 100%;
+  height: 3px;
+  background: #fff;
+  border-radius: 5px;
+  transform: scaleX(1);
+  transition: transform .5s;
+}  */
+/* .list:hover::after{
+  transform: scaleX(1);
+} */
+
+.list:hover {
+  border-bottom: 2px white solid;
+  /* position: absolute;
+  bottom: -5px;
+  left: 0; */
+}
+.planetanimation {
+  animation: grow 2.5s ease forwards;
+  scale: 0;
+}
+@keyframes grow {
+  0% {
+    scale: 0;
+  }
+  100% {
+    scale: 1;
+  }
+}
+@keyframes hovergrow {
+  0% {
+    transform: scale(1);
+  }
+  100% {
+    transform: scale(1.5);
+  }
+}
+.crewanimationflyin {
+  transform: translateY(800px);
+  animation: flyin 0.6s 0.5s ease forwards;
+}
+@keyframes flyin {
+  0% {
+    transform: translateY(800px);
+  }
+  100% {
+    transform: translateY(0px);
+  }
+}
+
+.animationpopin {
+  opacity: 0;
+  animation: popin 1s 0.5s ease-in-out forwards;
+}
+
+@keyframes popin {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+
