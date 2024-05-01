@@ -1,6 +1,6 @@
 import React from "react";
 import Planets from "./Planets";
-import CrewMembers from "../CREW/CrewMembers";
+
 
 const Body = () => {
   return (

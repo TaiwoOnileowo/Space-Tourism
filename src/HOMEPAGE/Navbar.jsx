@@ -4,7 +4,7 @@ import { navLink } from "../data";
 import { NavLink } from "react-router-dom";
 import menuicon from "./assets/menuicon.svg";
 import closeicon from "./assets/closeicon.svg";
-import "../index.css";
+import "../../public/index.css"
 
 const Navbar = ({ active }) => {
   const [toggleNav, setToggleNav] = React.useState(false);
